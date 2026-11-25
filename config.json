@@ -1,0 +1,80 @@
+{
+  "DISCORD_TOKEN": "",
+  "antispam": {
+    "active": true,
+    "messageCount": 5,
+    "time": 3000,
+    "deleteMessages": true,
+    "timeout": true,
+    "timeoutDuration": 60000,
+    "action": "kick"
+  },
+  "antilinks": {
+    "active": true,
+    "deleteMessages": true,
+    "actions": {
+      "timeout": false,
+      "timeoutDuration": 60000,
+      "kick": false,
+      "ban": false
+    }
+  },
+  "channelMonitoring": {
+    "active": true,
+    "maxChannelChanges": 5,
+    "timeFrame": 3000,
+    "action": "ban",
+    "timeoutDuration": 60000
+  },
+  "roleMonitoring": {
+    "active": true,
+    "maxRoleChanges": 5,
+    "timeFrame": 3000,
+    "action": "kick",
+    "timeoutDuration": 60000
+  },
+  "kickMonitoring": {
+    "active": true,
+    "maxKicks": 3,
+    "timeFrame": 1000,
+    "action": "kick",
+    "timeoutDuration": 60000
+  },
+  "banMonitoring": {
+    "active": true,
+    "maxBans": 3,
+    "timeFrame": 1000,
+    "action": "kick",
+    "timeoutDuration": 60000
+  },
+  "botMonitoring": {
+    "active": true,
+    "action": "kick",
+    "botAction": "kick",
+    "timeoutDuration": 60000
+  },
+  "roleEditMonitoring": {
+    "active": true,
+    "maxEdits": 3,
+    "timeFrame": 1000,
+    "action": "kick",
+    "timeoutDuration": 60000
+  },
+  "serverEditMonitoring": {
+    "active": true,
+    "maxEdits": 1,
+    "timeFrame": 1000,
+    "action": "kick",
+    "timeoutDuration": 60000
+  },
+  "hackMode": {
+    "active": false,
+    "hackChannelId": "",
+    "hackedRoleId": "",
+    "hackedViewChannelId": ""
+  },
+  "allowedGuildId": "",
+  "logWebhookUrl": "",
+  "embedFooter": "zrx",
+  "whitelistRoles": []
+}

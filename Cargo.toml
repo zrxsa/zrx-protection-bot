@@ -1,0 +1,25 @@
+[package]
+name = "zrx-protection-bot"
+version = "1.0.0"
+edition = "2021"
+description = "High-performance Discord anti-nuke / protection bot built with twilight-rs and Tokio"
+authors = ["zrx"]
+license = "MIT"
+
+[dependencies]
+twilight-gateway = { version = "0.15", default-features = false, features = ["rustls-native-roots", "zlib-stock"] }
+twilight-http = { version = "0.15", default-features = false, features = ["rustls-native-roots"] }
+twilight-model = "0.15"
+twilight-util = { version = "0.15", features = ["builder", "permission-calculator"] }
+
+tokio = { version = "1", features = ["full"] }
+dashmap = "6"
+parking_lot = "0.12"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+regex = "1.10"
+anyhow = "1.0"
+thiserror = "2.0"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+futures-util = "0.3"

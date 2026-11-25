@@ -1,0 +1,7 @@
+target/
+.env
+.cargo/config.toml
+*.tmp
+*.log
+*.exe
+*.pdb

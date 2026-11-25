@@ -1,0 +1,13 @@
+services:
+  protection-bot:
+    build: .
+    container_name: zrx-protection-bot
+    restart: unless-stopped
+    volumes:
+      - ./config.json:/app/config.json
+      - ./hacked_users.json:/app/hacked_users.json
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      - RUST_LOG=info
